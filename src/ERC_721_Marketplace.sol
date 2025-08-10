@@ -84,4 +84,13 @@ contract ERC_721_Marketplace is ERC721, ERC721URIStorage, Ownable {
     function supportsInterface(bytes4 interfaceId) public view override(ERC721, ERC721URIStorage) returns (bool) {
         return super.supportsInterface(interfaceId);
     }
+
+    function mintNFT(string memory uri) external returns (uint256) {
+    uint256 tokenId = _nextTokenId++;
+    _mint(msg.sender, tokenId);
+    _setTokenURI(tokenId, uri);
+    
+    emit NFT_Minted(tokenId, msg.sender, uri);
+    return tokenId;
+}
 }
