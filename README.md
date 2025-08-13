@@ -39,7 +39,7 @@ bash
 Copy
 Edit
 # 1️⃣ Clone the repository
-git clone https://github.com/Atharva-Joshi8999/NFT-Marketplace_721.git
+git clone git clone https://github.com/Atharva-Joshi8999/NFT-Marketplace_721.git
 
 # 2️⃣ Install dependencies
 cd nft-marketplace
