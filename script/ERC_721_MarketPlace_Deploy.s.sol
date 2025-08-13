@@ -7,7 +7,7 @@ import "../src/ERC_721_Marketplace.sol";
 contract ERC_721_Deployment is Script {
     function run() external {
         vm.startBroadcast();
-        new ERC_721_Marketplace();
+        new ERC721Marketplace();
         vm.stopBroadcast();
     }
 }
