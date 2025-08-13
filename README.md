@@ -1,66 +1,68 @@
-## Foundry
+🖼️ ERC-721 NFT Marketplace
+A decentralized NFT Marketplace where users can mint, list, buy, and cancel NFTs.
+Built with Solidity, Foundry, and React — powered by OpenZeppelin smart contract standards.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+🚀 Features
+🏗 Mint NFTs with custom metadata (name, description, image, etc.)
 
-Foundry consists of:
+📜 List NFTs for sale with a fixed price
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+💸 Buy NFTs securely with automatic fund transfer to the seller
 
-## Documentation
+❌ Cancel listings anytime before a sale
 
-https://book.getfoundry.sh/
+🔒 Secure smart contract design using ReentrancyGuard and Ownable
 
-## Usage
+📂 Metadata storage with ERC721URIStorage
 
-### Build
+📊 Fully tested with Foundry
 
-```shell
-$ forge build
-```
+🛠️ Tech Stack
+Smart Contracts
 
-### Test
+Solidity
 
-```shell
-$ forge test
-```
+OpenZeppelin ERC-721, URIStorage, Enumerable
 
-### Format
+Foundry (Forge, Cast, Anvil)
 
-```shell
-$ forge fmt
-```
+Frontend
 
-### Gas Snapshots
+React.js
 
-```shell
-$ forge snapshot
-```
+Ethers.js
 
-### Anvil
+Vercel Hosting
 
-```shell
-$ anvil
-```
+📦 Installation
+bash
+Copy
+Edit
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/NFT-Marketplace_721.git
 
-### Deploy
+# 2️⃣ Install dependencies
+cd nft-marketplace
+npm install
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+# 3️⃣ Run frontend
+npm start
+🔑 Smart Contract Deployment
+bash
+Copy
+Edit
+# Compile contracts
+forge build
 
-### Cast
+# Run tests
+forge test
 
-```shell
-$ cast <subcommand>
-```
+# Deploy to local or testnet
+forge script script/Deploy.s.sol --rpc-url <RPC_URL> --private-key <PRIVATE_KEY> --broadcast
+🌍 Live Demo
+🚀 Hosted on Vercel: View Live Marketplace
 
-### Help
+📄 License
+This project is licensed under the MIT License — you’re free to use, modify, and distribute it.
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+🔥 Built with ❤️ by Atharva Joshi
